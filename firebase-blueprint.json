@@ -1,0 +1,66 @@
+{
+  "entities": {
+    "settings": {
+      "title": "AppSettings",
+      "description": "Application settings for SPMB SDN Citapen",
+      "type": "object",
+      "properties": {
+        "namaSekolah": { "type": "string" },
+        "alamat": { "type": "string" },
+        "telepon": { "type": "string" },
+        "email": { "type": "string" },
+        "deskripsi": { "type": "string" },
+        "statusPendaftaran": { "type": "string" },
+        "tahunPendaftaran": { "type": "string" },
+        "isMaintenance": { "type": "boolean" },
+        "maintenanceMessage": { "type": "string" },
+        "tanggalPembukaanPendaftaran": { "type": "string" },
+        "persyaratanDaftarUlang": { "type": "string" },
+        "tanggalDaftarUlang": { "type": "string" },
+        "tanggalPengumuman": { "type": "string" },
+        "logoSekolah": { "type": "string" },
+        "kopSurat": { "type": "string" },
+        "namaKepalaSekolah": { "type": "string" },
+        "tandaTanganKepalaSekolah": { "type": "string" },
+        "stempelSekolah": { "type": "string" },
+        "nipKepalaSekolah": { "type": "string" },
+        "catatanTambahan": { "type": "string" },
+        "gambarHeaderBeranda": { "type": "string" },
+        "koordinatSekolah": { "type": "string" },
+        "tanggalCutoffUsia": { "type": "string" },
+        "sambutanKepalaSekolah": { "type": "string" },
+        "fotoKepalaSekolah": { "type": "string" },
+        "visiSekolah": { "type": "string" },
+        "misiSekolah": { "type": "string" },
+        "googleDriveDaftarUlang": { "type": "string" },
+        "isRapatAktif": { "type": "boolean" },
+        "rapatJudul": { "type": "string" },
+        "rapatTanggal": { "type": "string" },
+        "rapatWaktu": { "type": "string" },
+        "rapatTempat": { "type": "string" },
+        "rapatDeskripsi": { "type": "string" }
+      }
+    },
+    "registration": {
+      "title": "Registration",
+      "description": "Student registration record for SPMB",
+      "type": "object",
+      "properties": {
+        "Timestamp": { "type": "string" },
+        "No Pendaftaran": { "type": "string" },
+        "Status": { "type": "string" },
+        "Alasan Penolakan": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "settings/current": {
+      "schema": "settings",
+      "description": "Singleton database document storing current school settings"
+    },
+    "registrations/{registrationId}": {
+      "schema": "registration",
+      "description": "Collection of registrations submitted by candidates"
+    }
+  }
+}
