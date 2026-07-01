@@ -1,5 +1,5 @@
 /**
- * Google Apps Script Backend for PPDB SD
+ * Google Apps Script Backend for PPDB SMA
  * Deploy as a Web App:
  * 1. Click "Deploy" -> "New deployment"
  * 2. Select type: "Web app"
@@ -28,10 +28,10 @@ const DEFAULT_FORM_FIELDS = [
 ];
 
 const DEFAULT_SETTINGS = {
-  namaSekolah: "SDN Harapan Bangsa",
-  alamat: "Jl. Pendidikan No. 123, Kota Pelajar, Indonesia 12345",
-  telepon: "(021) 1234-5678",
-  email: "info@sdnharapanbangsa.sch.id",
+  namaSekolah: "SMAN Unggul Pidie Jaya",
+  alamat: "Jl. Blang Awe-Rungkom. Kec. Meureudu, Kab. Pidie Jaya, Aceh 24186",
+  telepon: "(0821) 6832-1603",
+  email: "info@smanunggulpijay.sch.id",
   deskripsi: "Mencetak generasi penerus bangsa yang cerdas, berakhlak mulia, dan siap menghadapi tantangan masa depan dengan pendidikan berkualitas.",
   statusPendaftaran: "Buka",
   formFields: JSON.stringify(DEFAULT_FORM_FIELDS)
